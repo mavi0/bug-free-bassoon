@@ -14,7 +14,7 @@ def main():
         if "GLOBAL" in data[i]:
             break
         line = data[i].split(",")
-        hosts.write(line[0] + " " + line[1] + "\n")
+        hosts.write(line[0] + " " + line[1] + ".lancs\n")
     
     hosts.close
 
