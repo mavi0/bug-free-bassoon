@@ -1,4 +1,3 @@
-
 def get_line(data):
     for i in range(len(data)):
         if "Virtual Address" in data[i]:
