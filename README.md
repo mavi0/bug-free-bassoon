@@ -14,3 +14,6 @@ cca3aefb50de    51cb67c43598    Up 7 hours     0.0.0.0:1194->1194/udp   youthful
 
 $ sudo ./main.sh youthful_zhukovsky
 ```
+Sample output:
+
+![output](https://i.imgur.com/3SdWtGG.png)
