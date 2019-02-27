@@ -14,6 +14,7 @@ if grep -q  "# VPN Hosts" /etc/hosts
 then 
     echo "OK"
 else
+    echo "Inserting [#VPN Hosts] to /etc/hosts"
     echo "# VPN Hosts" >> /etc/hosts
 fi
 
@@ -22,6 +23,6 @@ VPN_HOSTS="$(grep -n '# VPN Hosts' /etc/hosts | cut -d : -f 1)"
 sed -i "${VPN_HOSTS}"q /etc/hosts
 
 # Insert maps
-echo -e "\e[33mInsterting maps\e[39m"
+echo -e "\e[33mInserting maps\e[39m"
 cat hosts >> /etc/hosts
 cat /etc/hosts
